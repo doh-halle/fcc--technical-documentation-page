@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Introduction to Web Frameworks</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Introduction to Web Frameworks</header>
+        <ul>
+            <li><a class="nav-link" href="#web_frameworks">Web Frameworks</a></li>
+            <li><a class="nav-link" href="#react">React</a></li>
+            <li><a class="nav-link" href="#vue">Vue</a></li>
+            <li><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+            <li><a class="nav-link" href="#django">Django</a></li>
+            <li><a class="nav-link" href="#express">Express</a></li>
+            <li><a class="nav-link" href="#ruby_on_rails">Ruby On Rails</a></li>
+            <li><a class="nav-link" href="#reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="web_frameworks">
+            <header>Web Frameworks</header>
+            <p>A web application framework (WAF) or simply web framework is software framework that is designed to support the development of web applications including web services, web resources and web APIS. So basically web frameworks provide tools and libraries to simplify common web development operations. Web frameworks provide a standard way to build and deploy web applications on the World Wide Web. They aim to automate the overhead associated with common activities performed in web development. For example, many web frameworks provide libraries for database access, templating frameworks, and session management, and they often promote code reuse. Although they often target development of dynamic websites, they are also applicable to static websites.
+            </p>
+            <p>Here is a list of 6 popular web frameworks.</p>
+            <ol>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Bootstrap</li>
+                <li>Django</li>
+                <li>Express</li>
+                <li>Ruby On Rails</li>
+            </ol>
+        </section>
+        <section class="main-section" id="react">
+            <header>React</header>
+            <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality
+            </p>
+            <p>The learning curve in React is steep, once you know how to handle the syntax and ways to work with it, you will build exceptional applications.
+            </p>
+            <p>Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React.</p>
+            <code>$npx create-react-app my-app
+                cd my-app
+                npm start</code>
+        </section>
+        <section class="main-section" id="vue">
+            <header>Vue</header>
+            <p>Vue.js is a progressive javascript framework. It bets on its simplicity and fast learning curve, has faster DOM manipulation than its rivals (Angular and React) and is becoming increasingly popular. Its a modern JavaScript framework that provides useful facilities for progressive enhancement — unlike many other frameworks, you can use Vue to enhance existing HTML. This lets you use Vue as a drop-in replacement for a library like JQuery.
+            </p>
+            <p>To use Vue in an existing site, you can drop one of the following script elements onto a page. This allows you to start using Vue on existing sites, which is why Vue prides itself on being a progressive framework. This is a great option when migrating an existing project using a library like JQuery to Vue. With this method, you can use a lot of the core features of Vue, such as the attributes, custom components, and data-management.</p>
+            <p>To install Vue in a Nodejs environment, creat e folder for your Vue project, navigate into it within your terminal and run the command</p>
+            <code>$npm install vue</code>
+        </section>
+        <section class="main-section" id="bootstrap">
+            <header>Bootstrap</header>
+            <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+            </p>
+            <p>Bootstrap is a HTML, CSS & JS Library that focuses on simplifying the development of informative web pages (as opposed to web apps). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.
+            </p>
+            <p>Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code. They also extend the functionality of some existing interface elements, including for example an auto-complete function for input fields.
+            </p>
+            <p>To install Bootstrap in a node environment, launch your terminal and run the command. </p>
+            <code>$ npm install bootstrap
+            </code>
+        </section>
+        <section class="main-section" id="django">
+            <header>Django</header>
+            <p>Django is a python-based web framework for building quality web applications. Its primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes reusability and "pluggability" of components, less code, low coupling, rapid development, and the principle of don’t repeat yourself. Python is used throughout, even for settings, files, and data models. It is maintained by the Django Software Foundation (DSF), an American independent organization
+            </p>
+            <p>Django also provides an optional administrative create, read, update, delete interface that is generated dynamically through introspection and configured via admin models. Django developers say the applications are ridiculously fast, secure, scalable, and versatile.
+            </p>
+            <p>The example below shows how Django’s request handler receives and responds to http requests</p>
+            <code># Django view function
+                from django.http import HttpResponse
+                
+                def index(request):
+                    # Get an HttpRequest (request)
+                    # perform operations using information from the request.
+                    # Return HttpResponse
+                    return HttpResponse('Hello From Wes Africa')
+                </code>
+                <p>Django is deployed in conjunction with Apache or Nginx webserver and officially supports five database back-ends: PostgreSQL, MySQL, MariaDB, SQLite, Oracle and Microsoft SQL Server.
+                </p>
+        </section>
+        <section class="main-section" id="express">
+            <header>Express</header>
+            <p>Express or Expressjs is a popular un-opinionated web framework, written in JavaScript and hosted within the Node.js runtime environment. It is minimal and flexible framework that provides a robust set of features for web and mobile applications development. It is relatively minimal meaning many features are available as plugins. Express facilitates the rapid development of Node.js based Web applications. Express is also one major component of the MEAN software bundle.
+            </p>
+            <p>Since Express is hosted in a Nodejs environment, in order to use Express, you have to install node and use its package manager npm to install Express.
+            </p>
+            <code> $ npm install express
+            </code>
+            <p>Websites using Express are Fox Sports, Uber, PayPal and IBM etc.
+            </p>
+        </section>
+        <section class="main-section" id="ruby_on_rails">
+            <header>Ruby On Rails</header>
+            <p>Ruby on Rails is an extremely productive web application framework written in Ruby by David Heinemeier Hansson under the MIT License. One can develop an application at least ten times faster with Rails than a typical Java framework. Moreover, Rails includes everything needed to create a database-driven web application, using the Model-View-Controller pattern.
+            </p>
+            <p>Ruby on Rails' emergence in 2005 greatly influenced web app development, through innovative features such as seamless database table creations, migrations and scaffolding of views to enable rapid application development.
+            </p>
+            <p>Ruby on Rails is often installed using RubyGems, a package manager which is included with current versions of Ruby. The framework is typically deployed with a database server such as MySQL or PostgreSQL, and a web server such as Apache.
+            </p>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>All the documentation in this page is taken from <a href="https://en.wikipedia.org/wiki/Web_framework" target="_blank">Wikipedia</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
